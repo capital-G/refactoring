@@ -1,0 +1,100 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage[scaled]{helvet}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cvpr}
+\usepackage{epsfig}
+\usepackage{tikz} 
+\usepackage{graphicx}
+\usepackage{stackengine}
+\usepackage{times}
+\usepackage{url}
+
+%\usepackage[pagebackref=true,breaklinks=true,colorlinks,bookmarks=false,linkcolor=black,citecolor=black]{hyperref}
+\usepackage{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{2343} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\far}{FAR}
+\DeclareMathOperator{\val}{VAL}
+\DeclareMathOperator{\fa}{FA}
+\DeclareMathOperator{\ta}{TA}
+
+\newcommand\todo[1]{\textcolor{red}{ToDo: #1}}
+\newcommand\note[1]{\textcolor{red}{Note: #1}}
+
+\newcommand\email[1]{\small{\href{mailto:#1}{\color{black}{\nolinkurl{#1}}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifcvprfinal\pagestyle{empty}\fi
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Refactoring reality: Epistemic practice on abstraction}
+
+\author{Dennis Scheiba\\
+\email{dennis.scheiba@rsh-duesseldorf.de}\\
+Robert Schumann Hochschule Düsseldorf - IMM - Klang und Realität\\
+%Institution1 address\\
+%{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+}
+\maketitle
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+\vspace{-1em}
+Refactoring is a common practice in software development.
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\vspace{-1em}
+
+\section{What is refactoring} \label{what}
+
+Before we talk about refactoring as epistemic practice we want to take a look at some aspects of it.
+
+There is no singleton purpose of refactoring and although its purpose is arguably existing and much important
+it is difficult to give a precise definition.
+The struggle between intuitively, generalization and complexity is where refactoring lives.
+Attached to this is also the trade-off between opening possibilities which also always closes
+other possibilities.
+
+\subsection{Refactoring in software}
+
+\subsection{Refactoring without Turing-completeness} \label{turing}
+
+
+\section{Refactoring art}
+
+Refactoring in a traditional sense does not change the result of the program but
+allows for changes on the in- and outputs on all intermediate steps of the program.
+This means that taking the naïve approach of keeping the input fixed and just run
+one time the original version and the second time the refactored version shall produce
+the same output.
+Yet refactoring allows us to change how we approach things and therefore allows for different material
+which is crucial as we could run any program in any Turing complete environment but
+we still do not use Excel as a sound engine.
+
+\subsection{Refactoring sound}
+
+\subsection{Refactoring light}
+
+{\small
+\bibliographystyle{alpha}
+\bibliography{references.bib}
+}
+
+\end{document}
