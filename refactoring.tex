@@ -42,7 +42,7 @@
 
 \author{Dennis Scheiba\\
 \email{dennis.scheiba@rsh-duesseldorf.de}\\
-Robert Schumann Hochschule Düsseldorf - IMM - Klang und Realität\\
+Robert Schumann Hochschule Düsseldorf - Institut für Musik und Medien\\
 %Institution1 address\\
 %{\tt\small firstauthor@i1.org}
 % For a paper whose authors are all at the same institution,
@@ -56,13 +56,19 @@ Robert Schumann Hochschule Düsseldorf - IMM - Klang und Realität\\
 %%%%%%%%% ABSTRACT
 \begin{abstract}
 \vspace{-1em}
-Refactoring is a common practice in software development.
+Refactoring is a crucial practice in software development, yet it is difficult to a precise goal to this process.
+One could say that refactoring is re-evaluation and modification of existing modularization in the context of what the status quo is 
+and what this status quo could be in the future.
+
+Revisiting the work of oneself or others is not just important in software development but also within the art domain.
+In this paper we want to explore how such a practice could be enforced to better understand how both domains handle with
+common problems and how each other domain could adapt and improve from the other.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \vspace{-1em}
 
-\section{What is refactoring} \label{what}
+\section{Refactoring and modularization} \label{what}
 
 Before we talk about refactoring as epistemic practice we want to take a look at some aspects of it.
 
@@ -72,21 +78,65 @@ The struggle between intuitively, generalization and complexity is where refacto
 Attached to this is also the trade-off between opening possibilities which also always closes
 other possibilities.
 
+\subsection{Modularization}
+
+Separating the terms software and art is highly doubtful and should not be made easily.
+For the sake of simplicity we will nonetheless allow us to work with stereotypes here.
+
+\subsubsection*{In Software}
+
+Somehow there is a common conception of what a \textit{good} written software is and what is not.
+This \textit{quality} can be evaluated on multiple categories such as
+
+\begin{itemize}
+    \item Bugs
+    \item Features
+    \item Usability
+    \item Catholicity
+    \item License
+\end{itemize}
+
+of which some categories can be linearly independent or strictly co-relating with each other.
+
+There are even projects like SonarQube which provide a formalized way of evaluating code based on some
+parameters mentioned above.
+
+Modularization in software allows for the restructuring of a given program, changing how the abstraction and
+modularization of existing code is organized and programmed and therefore can hopefully yield better
+results in the metrics mentioned above.
+
+Modularization in software is crucial when we regard topics such as Turing completeness which allows us
+to classify programs if they can calculate any given program or not.
+This means that all programs which are Turing complete are interchangeable we still rely on abstraction to
+tame the possibilities.
+This selection between is already art in itself.
+
+\subsubsection*{In Art}
+
+Modularization in art is maybe not as obvious as in software engineering, although it is present all the time.
+As social beings we can not escape exposure to the culture around us, therefore all our creations
+are simply just reactions to the input we have received.
+This becomes the most obvious if we implement a reference to something else or make a copy of something existing.
+Therefore art is in itself a
+
+The question now is if we can interchange the metrics between good software and good \textit{art}, allowing
+us to quantize an artifact under the premise of certain metrics.
+
 \subsection{Refactoring in software}
-
-\subsection{Refactoring without Turing-completeness} \label{turing}
-
 
 \section{Refactoring art}
 
-Refactoring in a traditional sense does not change the result of the program but
-allows for changes on the in- and outputs on all intermediate steps of the program.
-This means that taking the naïve approach of keeping the input fixed and just run
-one time the original version and the second time the refactored version shall produce
-the same output.
-Yet refactoring allows us to change how we approach things and therefore allows for different material
-which is crucial as we could run any program in any Turing complete environment but
-we still do not use Excel as a sound engine.
+Although the concept of refactoring originates in software engineering we have shown that this concept is also
+present in art but often more in a meta context.
+We can therefore ask ourselves how the transformation of this meta context of refactoring to an art artifact itself
+could be achieved.
+
+Yet a naïve approach of just doing a comparison of an artifact which has been exposed to refactoring and another one
+not is not fruitful as the concept of refactoring is that the same input should also produce the same output.
+Yet the interface of what the in- and output should be can be subject to change in refactoring.
+
+If we expose somebody to Max MSP or to Microsoft Power Point we expect the artifact to be something different, although
+both programs are Turing complete.
 
 \subsection{Refactoring sound}
 
