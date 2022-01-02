@@ -27,18 +27,11 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{Refactoring reality: Epistemic practice on abstraction}
+\title{Refactoring as epistemic and artistic practice}
 
 \author{Dennis Scheiba\\
 \email{dennis.scheiba@rsh-duesseldorf.de}\\
 Robert Schumann Hochschule Düsseldorf - Institut für Musik und Medien\\
-%Institution1 address\\
-%{\tt\small firstauthor@i1.org}
-% For a paper whose authors are all at the same institution,
-% omit the following lines up until the closing ``}''.
-% Additional authors and addresses can be added with ``\and'',
-% just like the second author.
-% To save space, use either the email address or home page, not both
 }
 \maketitle
 
@@ -59,13 +52,15 @@ common problems and how each other domain could adapt and improve from the other
 
 \section{Refactoring and modularization} \label{what}
 
-Before we talk about refactoring as epistemic practice we want to take a look at some aspects of it.
-
 There is no singleton purpose of refactoring and although its purpose is arguably existing and much important
 it is difficult to give a precise definition.
 The struggle between intuitively, generalization and complexity is where refactoring lives.
-Attached to this is also the trade-off between opening possibilities which also always closes
-other possibilities.
+Attached to this is also the trade-off between opening possibilities which always at the same time closes
+other possibilities also.
+
+A dependency for refactoring is the modularization into distinctive sub-parts, working a as a reference
+which can adapt the environment in which it is used.
+Yet we must discuss if modularization actually exists as abstraction itself is doubtful as well.
 
 \subsection{Modularization}
 
@@ -87,12 +82,13 @@ This \textit{quality} can be evaluated on multiple categories such as
 
 of which some categories can be linearly independent or strictly co-relating with each other.
 
-There are even projects like SonarQube which provide a formalized way of evaluating code based on some
+There are even projects like \textit{SonarQube} which provide a formalized way of evaluating code based on some
 parameters mentioned above.
 
 Modularization in software allows for the restructuring of a given program, changing how the abstraction and
 modularization of existing code is organized and programmed and therefore can hopefully yield better
 results in the metrics mentioned above.
+Common techniques for these things are design principles, paradigms or techniques.
 
 Modularization in software is crucial when we regard topics such as Turing completeness which allows us
 to classify programs if they can calculate any given program or not.
@@ -106,12 +102,20 @@ Modularization in art is maybe not as obvious as in software engineering, althou
 As social beings we can not escape exposure to the culture around us, therefore all our creations
 are simply just reactions to the input we have received.
 This becomes the most obvious if we implement a reference to something else or make a copy of something existing.
-Therefore art is in itself a
+Therefore art is in itself a self-referential system in which the copies and quotations are the modules.
 
 The question now is if we can interchange the metrics between good software and good \textit{art}, allowing
-us to quantize an artifact under the premise of certain metrics.
+us to quantize an artifact under the premise of certain metrics which is something the art-culture is often
+afraid of doing but the pragmatism of software engineering requires it.
 
 \subsection{Refactoring in software}
+
+If we perform a quantitative analysis on the Linux kernel, which is biggest open source project, we can see
+that a high percentage of changes are not in the territory of writing new features or fixing bugs, but often 
+contain a concept of refactoring - changing and re-arranging existing structures.
+
+This is indeed the art in programming as this is not pre-determined by algorithm and there is no
+single best solution to this problem.
 
 \section{Refactoring art}
 
