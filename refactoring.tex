@@ -17,7 +17,6 @@
 \usepackage{stackengine}
 \usepackage{times}
 \usepackage{url}
-\usepackage[backend=bibtex]{biblatex}
 
 %\usepackage[pagebackref=true,breaklinks=true,colorlinks,bookmarks=false,linkcolor=black,citecolor=black]{hyperref}
 \usepackage{hyperref}
@@ -41,63 +40,68 @@ Robert Schumann Hochschule Düsseldorf - Institut für Musik und Medien\\
 }
 \maketitle
 
-%%%%%%%%% ABSTRACT
 \begin{abstract}
-\vspace{-1em}
-Refactoring is a crucial and daily practice in software development, yet it is difficult to define a precise goal to this exact process.
-One could argue refactoring that refactoring is a re-evaluation and modification of existing modularization in the context of what the status quo is and projecting what this status quo could be in the future.
+
+\begin{quote}
+There is no singleton purpose of refactoring and although its purpose is arguably important and performed everyday it is difficult to give a precise definition of the necessities for such a process.
+The struggle between intuition, generalization, simplification and complexity is where refactoring resides.
+Attached to this method is always the evaluation of a trade-off, between opening possibilities which at the same time makes other possibilities impossible.
 
 Revisiting the work of oneself or others is not just important in software development but also within the context of art and science.
 In this paper we want to explore how the practice of refactoring can be transformed to other domains and inspecting implementations, implication and practices which could be adopt and transformed among each domain.
+\end{quote}
 \end{abstract}
 
-%%%%%%%%% BODY TEXT
 \vspace{-1em}
 
 \section{Refactoring and modularization} \label{what}
 
-There is no singleton purpose of refactoring and although its purpose is arguably existing and much important
-it is difficult to give a precise definition.
-The struggle between intuition, between generalization, simplification and complexity is where refactoring resides.
-Attached to this method is always the evaluation of a trade-off, between opening possibilities which at the same time makes other possibilities impossible.
+Refactoring is a crucial and daily practice in software development, yet it is difficult to define a precise goal to this process.
+One could argue that refactoring is a re-evaluation and modification of existing modularization in the context of what the status quo is and projecting what this status quo could and should be in the future.
 
-Another goal of refactoring is modularization which allows to separate an existing complex subject into distinctive yet not fully independent sub discretizations which then can be adapted on a per-context basis.
-Mathematics, which is often labeled as a \textit{auxillary science}, has the goal to form such universal statements.
-This should be motivation enough to stay in this transformation process of re-factoring which allows us to transform the foundations of our believes as this will not solve complexity but allows to inspect complexity within complexity.
+The proclaimed modularization should allow us to separate an existing complex subject into distinctive yet not fully independent sub discretizations which then can be re-adapted on a per-context basis.
+Mathematics, which is often labeled as a \textit{auxillary science}, has its goal to form such universal statements which can be re-adapted in various contexts.
+This should be motivation enough to stay in this transformation area which allows us to change the foundations of our believes and allows us to not solve complexity but allows to inspect complexity within complexity itself.
+Therefore we can see refactoring as an epistemic gesture.
 
-Yet we must discuss if modularization actually exists as well as abstraction itself which should be doubted at first as well.
+Yet we must discuss if modularization actually exists as well as abstraction itself which should be doubted at first as well. \cite{Teil_Latour_1995}.
 
-\subsection{Modularization}
+\subsection{Refactoring in Software}
 
-Separating the terms software and art is highly doubtful and should not be made easily.
-For the sake of simplicity we will nonetheless allow us to work with stereotypes here.
-
-\subsubsection*{In Software}
-
-Somehow there is a common conception of what a \textit{good} written software is and what is not.
-This \textit{quality} can be evaluated on multiple categories such as
+There seems to be a common conception of what a \textit{good} written software is and what is not.
+This \textit{quality} can be evaluated on multiple categories, but not limited to, such as
 
 \begin{itemize}
-    \item Bugs
+    \itemsep0em
+    \item Number of Bugs
     \item Features
     \item Usability
     \item Catholicity
     \item License
 \end{itemize}
 
-of which some categories can be linearly independent or strictly co-relating with each other.
-Just remember the quote \begin{quote}
+Yet it is important to comprehend that each of these metrics are rarely independent of each other.
+An increase of features is likely to also increase the number of bugs as it introduces more and more edge cases which combinations can lead to bugs.
+Projects like \textit{SonarQube} gives us the promise to quantify the quality of such source code based on certain criteria.
+Yet we ask ourselves why such a Software is limited to the domain of programming source code and not beyond other domains which allow for re-transformation of their field, which means refactoring.
+There are also certainly bugs which can not be observed on such a low level of analysis as the infamous quote
+\begin{quote}
     is this a bug or a feature?
 \end{quote}
-which is somehow similliar to the quote \begin{quote}
+demonstrates.
+The classification and notion of what an error is and what is not therefore relies only on an implicit context which frictions can be shown when made explicit.
+
+This distinction between malfunction and function is not limited to the domain of software as demonstrated by the quote
+\begin{quote}
     % harpe kerkeling?
     is this art or rubbish
 \end{quote}
-which probably finds it motivation by the infamous \textit{Fettecke} by Joseph Beuys.
+,which probably finds it motivation by the infamous \textit{Fettecke} by Joseph Beuys, and therefore also makes it dependent of the embedded context.
+An obvious domain of art which plays and enables to re-contextualize errors is glitch art \cite{Schubert_2019}.
 
-Projects like \textit{SonarQube} gives us the promise to quantify the quality of such source code can be measured based on certain criteria.
-Yet we ask ourselves why such a Software is limited to the domain of programming source code and not beyond other domains which allow for re-transformation of their field, which means refactoring.
 [note that there are neural networks which evaluate aesthetic characteristics but not on a hard rule set?]
+
+\subsection{Modularization}
 
 Modularization in software allows an isolation, encapsulation and restructuring of a given complex and over the years certain patterns emerged in which software is build.
 One of the most crucial things of modularization is a common API (Application Programming Interface) which allows the communication between.
@@ -123,6 +127,20 @@ Therefore art can be seen as a self-referential system in which the copies and q
 
 In order to allow modularization it is important to be transparent, open, critical and open to changes in order to gain a concept of better understanding.
 
+\cite{bratton_stack_2015}
+
+\subsection{Modularization in science}
+
+\section{Refactoring errors}
+
+\subsection{Refactoring a black box}
+
+Neural networks.
+
+\subsection{Rhizom}
+
+Software is not written and accessed from top to bottom but it works like a rhizom.
+
 \section{Refactoring software}
 
 If we perform a quantitative analysis on the Linux kernel, which is biggest open source project, we can see
@@ -133,6 +151,8 @@ This is indeed the art in programming as this is not pre-determined by algorithm
 single best solution to this problem.
 
 \section{Refactoring art}
+
+\cite{Schubert_2019}.
 
 Although the concept of refactoring originates in software engineering we have shown that this concept is also
 present in art but often more in a meta context.
@@ -148,7 +168,7 @@ both programs are Turing complete.
 
 \subsection{Iannis Xenakis: Formalized Music}
 
-As this paper is written on a music academy we want to inspect this principle on the domain of Iannis Xenakis.
+As this paper is written on a music academy we want to inspect this principle on the domain of Iannis Xenakis. \cite{Xenakis_1992}.
 One of his goal was to build a unified language for music through which every aspect can be transformed [towards a metamusic].
 Of course we can simply argue that this is doomed to fail as the meta language experiments of the 60s have shown us [?], yet we allow ourselves to take a look at what this principle allows us to do and how the principle of refactoring is applied here.
 
@@ -157,5 +177,7 @@ Of course we can simply argue that this is doomed to fail as the meta language e
 
 Now we can take a look where both things merge, at the SuperCollider source code of the tuning implementations?
 
+\bibliographystyle{alpha}
+\bibliography{references}
 
 \end{document}
