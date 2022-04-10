@@ -32,7 +32,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{Refactoring as epistemic and artistic practice}
+\title{Refactoring in epistemic and artistic practice}
 
 \author{Dennis Scheiba\\
 \email{dennis.scheiba@rsh-duesseldorf.de}\\
@@ -43,28 +43,34 @@ Robert Schumann Hochschule Düsseldorf - Institut für Musik und Medien\\
 \begin{abstract}
 
 \begin{quote}
-There is no singleton purpose of refactoring and although its purpose is arguably important and performed everyday it is difficult to give a precise definition of the necessities for such a process.
+Refactoring has no singleton purpose and although it is arguably important and performed everyday in applied computer science it is difficult to give a precise definition of the necessities for such a process.
 The struggle between intuition, generalization, simplification and complexity is where refactoring resides.
 Attached to this method is always the evaluation of a trade-off, between opening possibilities which at the same time makes other possibilities impossible.
 
-Revisiting the work of oneself or others is not just important in software development but also within the context of art and science.
-In this paper we want to explore how the practice of refactoring can be transformed to other domains and inspecting implementations, implication and practices which could be adopt and transformed among each domain.
+Revisiting the work of oneself or others is not just important in software development but also within the context of science, society, law and art.
+In this paper we therefore want to discover how the practice of refactoring is present in a variety of domains and inspect implementations, implication and practices which then could be adopted and transformed among domains, therefore refactoring the refactoring.
 \end{quote}
 \end{abstract}
 
 \vspace{-1em}
 
-\section{Refactoring and modularization} \label{what}
+\section{Modularization}
 
 Refactoring is a crucial and daily practice in software development, yet it is difficult to define a precise goal to this process.
 One could argue that refactoring is a re-evaluation and modification of existing modularization in the context of what the status quo is and projecting what this status quo could and should be in the future.
 
 The proclaimed modularization should allow us to separate an existing complex subject into distinctive yet not fully independent sub discretizations which then can be re-adapted on a per-context basis.
-Mathematics, which is often labeled as a \textit{auxillary science}, has its goal to form such universal statements which can be re-adapted in various contexts.
-This should be motivation enough to stay in this transformation area which allows us to change the foundations of our believes and allows us to not solve complexity but allows to inspect complexity within complexity itself.
-Therefore we can see refactoring as an epistemic gesture.
+For instance mathematics, which is often labeled as a \textit{auxillary science}, has its goal to form such universal statements which can be re-adapted in various contexts.
+This should be motivation enough to stay in this transformation area which allows us to inspect the foundations of our believes and allows us to not just handle complexity but allows us to inspect complexity within complexity itself.
+Therefore we can see refactoring as an epistemic gesture which tells us about our work, our ideological foundations and our projections into a future.
 
-Yet we must discuss if modularization actually exists as well as abstraction itself which should be doubted at first as well. \cite{Teil_Latour_1995}.
+\subsection{Modularization of references}
+
+Yet we must discuss if modularization actually exists as well as abstraction itself which should be doubted at first as well.
+
+\todo{This needs to be written, want to include \cite{Teil_Latour_1995} and \cite{Kircz_1998} here}
+
+\todo{include the difference(?) between modularization and referential}
 
 \subsection{Refactoring in Software}
 
@@ -81,101 +87,91 @@ This \textit{quality} can be evaluated on multiple categories, but not limited t
 \end{itemize}
 
 Yet it is important to comprehend that each of these metrics are rarely independent of each other.
-An increase of features is likely to also increase the number of bugs as it introduces more and more edge cases which combinations can lead to bugs.
+% was soll ein bug sein?
+An increase of features is likely to also increase the number of bugs as it introduces more and more edge cases whose combinations can lead to bugs.
 Projects like \textit{SonarQube} gives us the promise to quantify the quality of such source code based on certain criteria.
-Yet we ask ourselves why such a Software is limited to the domain of programming source code and not beyond other domains which allow for re-transformation of their field, which means refactoring.
-There are also certainly bugs which can not be observed on such a low level of analysis as the infamous quote
+Yet we ask ourselves why such a service is limited to the domain of source code for software and is not used in other domains where an ambiguity between intention and error is possible which is demonstrated by such infamous quotes as 
+% To allow a re-transformation of such a field refactoring.
+%There are also certainly bugs which can not be observed on such a low level of analysis as the infamous quote
 \begin{quote}
     is this a bug or a feature?
 \end{quote}
-demonstrates.
-The classification and notion of what an error is and what is not therefore relies only on an implicit context which frictions can be shown when made explicit.
+%demonstrates.
+This classification and notion of what an error is and what is not therefore relies only on an implicit context.
+This implicit understanding can lead to frictions which then can be resolved by discussing the explicit understanding of the complex.
 
-This distinction between malfunction and function is not limited to the domain of software as demonstrated by the quote
+This distinction between malfunction and function is not limited to the domain of software as demonstrated by another quote
 \begin{quote}
-    % harpe kerkeling?
-    is this art or rubbish
+    % ist das kunst oder kann das weg
+    \todo{Ist das Kunst oder kann das weg}
 \end{quote}
-,which probably finds it motivation by the infamous \textit{Fettecke} by Joseph Beuys, and therefore also makes it dependent of the embedded context.
-An obvious domain of art which plays and enables to re-contextualize errors is glitch art \cite{Schubert_2019}.
+which probably finds it motivation by the infamous \textit{Fettecke} by Joseph Beuys, in which also the embedded context of an artefact is important.
+An obvious domain of art which plays and enables to re-contextualization and emancipation of errors is glitch art but has recently also developed beyond this mere aesthetic to an conception of error within art \cite{Schubert_2019}.
 
-[note that there are neural networks which evaluate aesthetic characteristics but not on a hard rule set?]
+\subsection{Elastic coupling of possibilities}
 
-\subsection{Modularization}
+Modularization in software promises an isolation, encapsulation and restructuring of a given complex and over the years certain patterns emerged in which software is build to enforce these particular structures.
+Common techniques are called design principles, paradigms or techniques and is one of the motivations and distinctions to create different programming languages.
+Do we talk to everyone who can talk, like in duck typing, or do we only talk to a certain kind of entities, like in static typing?
+We clearly see that those patterns are loaded with ideology and it is interesting to discuss how much influence certain ideologies have on certain programming paradigms.
 
-Modularization in software allows an isolation, encapsulation and restructuring of a given complex and over the years certain patterns emerged in which software is build.
-One of the most crucial things of modularization is a common API (Application Programming Interface) which allows the communication between.
-Yet the construction of such an API is tied to the concepts of the domain itself but also allows to go beyond it.
-Do we talk to everyone who can talk (duck typing) or do we only talk to a certain kind of entities (static typing)?
-Common techniques are called design principles, paradigms or techniques, yet rarely they reflect on their ideological implications.
-
-By reaching out we allow ourselves to re-contextualize the domain in a new context which offers, speaking in neo-liberalism terms, a win-win opportunity for both parties.
-This allows for justification among society and ourselves what we are doing, providing a leap forward and gaining a new perspective to our field of interest and also to test our assumptions in a new domain.
+Yet in order to allow a re-contextualization of our program we need to provide an API (Application Programming Interface) which defines the communication between components and provides also allows to create a boundary between different concepts and principles, allowing us to leave the nucellus of restrictions of certain concepts.
+This terra incognita can be within same programming language, between programs, between multiple computers or also between human and machine and its design is crucial to the idea of refactoring. 
 % use turing completeness as a foundation here?
 
-Although we yet omitted one crucial statement which is the foundation upon all modularization and transformation, the common ground of turing completeness which.
-Yet it is false to assume that this allows us to do anything at all time - we do not use Power Point as a ? [note that powerpoint is indeed turing complete] and don't use this for that simply because the intentions of each tool are aimed at a different purpose  - while they all rely on a coordination of voltages in a circuit based upon its environment, art has the same universal language of communication as it tries to evoke a resonance within a biological circuit with the means of sensorial evaluation.
+Although we yet omitted one crucial statement which builds the foundation for all modularization and transformation in the domain of software which is the common ground of turing completeness.
+Turing completeness gives us the promise that if a machine can perform a certain set of instructions it can operate any program which is turing complete and this implies that any any turing machine can simulate any other turing machine.
+This machine can be a hardware machine or a software program as well.
+% explain what this means
+Yet it is false to assume that turing completeness allows us to do anything at all time - we do not use Power Point as an audio workstation \todo{note that powerpoint is indeed turing complete} and don't use GIMP to cut audio files simply because the intentions of each program is aimed at a different purpose.
+While they all rely on a coordination of voltages in a circuit based upon its environmental input we need to build barriers and tame the possibilities to get something constructive out of it.
+% this is the same as high level language ?
+% This means that all programs which are Turing complete are interchangeable but in order to build complex programs we need to tame the possibilities.
+By deciding what is and what is not possible within our program we allow the program to exist and build contained modules, albeit this reduction of possibilities can be achieved on different levels of operation.
 
-This means that all programs which are Turing complete are interchangeable but in order to build complex programs we need to tame the possibilities.
-By deciding what is and what is not possible within our program we allow the program to exist [what about kernels?], albeit this reduction of possibilities can be achieved on different levels of operation.
+Art often relies on an universal language of communication as well as it tries to evoke a resonance within a biological circuit with the means of sensorial evaluation.
+As humans are at all times exposed to sensorial input we also try to tame this input to allow ourselves to focus and overcome a first perception, reconstructing our understanding by revisiting the known and adapting to the input, allowing ourselves to project ideas into the future.
+Therefore modularization and a coupling of these fragments can not only be observed in computer science but also can be seen in the domain of arts - be it as trivial as a sample or a quotation or as complex as an untraceable influence within the artwork or the context of its culture.
+This seesaw of references within culture can also be regarded as a rhizome and is therefore similar to the references within the source code of a program which is neither by human neither by machine read from top to bottom but instead creates something like a self-supporting network of references which at the same time still offers a clear entry point for hallucinations within the restricted realm of possibilities.
 
-This is often seen in the domain of arts as well as the segregation of fine arts, music, media art and science is still often separated at institutes.
+We also find a similarity within the paradigms and design principles of art which is nowadays (at least by institutions) still separated into fine arts, performing arts, music and theoretical discourse.
+Within each of these contexts we also find cross-contaminations between those subjects, so just as an API allow us to cross barriers of paradigms we can also see these acts of building bridges by the referential feedback loop within art.
 
-Also the human as a social being can not escape exposure to its culture, therefore all creations could be seen as reactions to the input we have received.
-The most obvious way of this mechanic is quotation or sampling which allows for a transformation and re-contextualization within its own domain, but often we find a transformation to a new medium as well.
-Therefore art can be seen as a self-referential system in which the copies and quotations are the modules which allow for re-contextualizations 
+% Also the human as a social being can not escape exposure to its culture, therefore all creations could be seen as reactions to the input we have received.
+
+\subsection{Promises}
 
 In order to allow modularization it is important to be transparent, open, critical and open to changes in order to gain a concept of better understanding.
+This is closely tied to the concept of a promise because there needs to be a common trust when transferring concepts between domains that there is nothing lost in translation.
 
-\cite{bratton_stack_2015}
+\todo{More to come? Want to include something out of \cite{bratton_stack_2015}here.}
 
-\subsection{Modularization in science}
+% \subsection{Modularization in science}
 
 \section{Refactoring errors}
 
 \subsection{Refactoring a black box}
 
-Neural networks.
+\todo{Refactoring itself could be a black box b/c often enough only the intenal mechanism gets re-wired and no new features get added?}
 
-\subsection{Rhizom}
+\todo{Can we only refactor stuff we understand? What about neural networks.}
 
-Software is not written and accessed from top to bottom but it works like a rhizom.
+\todo{there are neural networks which evaluate aesthetic characteristics but not on a hard rule set?}
 
-\section{Refactoring software}
+\subsection{Refactoring expectations}
 
-If we perform a quantitative analysis on the Linux kernel, which is biggest open source project, we can see
-that a high percentage of changes are not in the territory of writing new features or fixing bugs, but often 
-contain a concept of refactoring - changing and re-arranging existing structures.
+\todo{Some satitistical analysis of linux kernel commits regarding errors and refactoring?}
 
-This is indeed the art in programming as this is not pre-determined by algorithm and there is no
-single best solution to this problem.
-
-\section{Refactoring art}
-
-\cite{Schubert_2019}.
-
-Although the concept of refactoring originates in software engineering we have shown that this concept is also
-present in art but often more in a meta context.
-We can therefore ask ourselves how the transformation of this meta context of refactoring to an art artifact itself
-could be achieved.
-
-Yet a naïve approach of just doing a comparison of an artifact which has been exposed to refactoring and another one
-not is not fruitful as the concept of refactoring is that the same input should also produce the same output.
-Yet the interface of what the in- and output should be can be subject to change in refactoring.
-
-If we expose somebody to Max MSP or to Microsoft Power Point we expect the artifact to be something different, although
-both programs are Turing complete.
-
-\subsection{Iannis Xenakis: Formalized Music}
-
-As this paper is written on a music academy we want to inspect this principle on the domain of Iannis Xenakis. \cite{Xenakis_1992}.
-One of his goal was to build a unified language for music through which every aspect can be transformed [towards a metamusic].
-Of course we can simply argue that this is doomed to fail as the meta language experiments of the 60s have shown us [?], yet we allow ourselves to take a look at what this principle allows us to do and how the principle of refactoring is applied here.
+\todo{The drug trip as a mind refactoring?}
 
 
-\section{Refactoring both}
+\section{Rearranging sound}
 
-Now we can take a look where both things merge, at the SuperCollider source code of the tuning implementations?
+As this paper is written on a music academy we want to inspect this principle upon the domain of sound as well. 
+
+\todo{Would really love to take the text as a springboard to a composition/sonic concept but am currently a bit lost here. Would really like to cite some ideas of \cite{Xenakis_1992} here as I am currently into his ideas}
+
+\subsection{Dependency Hell}
 
 \bibliographystyle{alpha}
 \bibliography{references}
